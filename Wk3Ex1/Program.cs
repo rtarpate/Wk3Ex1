@@ -13,14 +13,14 @@ double convertcurrency2 = 0.0;
 
 //promt user input to ask what currecny they are starting with
 Console.WriteLine(" What currency are you wanting to convert: ");
-Console.WriteLine("1:USD, 2:Canadian Dollar, 3:Japanese Yen ");
+Console.WriteLine("1:USD, 2:Euro, 3:Japanese Yen ");
 
 //collects user input for frist currency
 currencyA = Convert.ToInt32(Console.ReadLine());
 
 //promt user input for the second currency that they want to convert too
 Console.WriteLine(" Which currency are you wanting to convert into: ");
-Console.WriteLine("1:USD, 2:Canadian Dollar, 3:Japanese Yen ");
+Console.WriteLine("1:USD, 2:Euro, 3:Japanese Yen ");
 
 //collects user input for second currency
 currencyB = Convert.ToInt32(Console.ReadLine());
@@ -43,7 +43,7 @@ if (currencyA == 1)
     //converts usd into Canadian Dollar
     else if (currencyB == 2)
     {
-        convertcurrency2 = convertcurrency * 1.45;
+        convertcurrency2 = convertcurrency * 0.96;
     }
     //conerts usd into japanese yen
     else if (currencyB == 3)
@@ -60,7 +60,7 @@ else if (currencyA == 2)
     //converts Canadian Dollar into usd
     if (currencyB == 1)
     {
-        convertcurrency2 = convertcurrency * 0.69;
+        convertcurrency2 = convertcurrency * 1.04;
     }
     // converts Canadian Dollar into Canadian Dollar
     else if (currencyB == 2)
@@ -70,7 +70,7 @@ else if (currencyA == 2)
     //converts Canadian Dollar into yen
     else if (currencyB == 3)
     {
-        convertcurrency2 = convertcurrency * 106.71;
+        convertcurrency2 = convertcurrency * 160.81;
     }
 
 
@@ -87,7 +87,7 @@ else if (currencyA == 3)
     //converts yen into Canadian Dollar
     else if (currencyB == 2)
     {
-        convertcurrency2 = convertcurrency * 0.0094;
+        convertcurrency2 = convertcurrency * 0.0062;
     }
     //converts yen into yen
     else if (currencyB == 3)
